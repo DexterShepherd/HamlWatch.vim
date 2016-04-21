@@ -6,3 +6,5 @@ function! HamlWatch()
     execute(cmd)
   endif
 endfunction
+
+autocmd BufWritePost *.html.haml :call HamlWatch()
